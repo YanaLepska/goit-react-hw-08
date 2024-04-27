@@ -1,0 +1,25 @@
+.contactName {
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.contactCard {
+  background-color: rgba(188, 172, 72, 0.433);
+  border: 2px solid #676565;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  padding: 20px 10px;
+}
+
+.contactDelete {
+  background: inherit;
+  cursor: pointer;
+  display: inline-flex;
+  border: none;
+}

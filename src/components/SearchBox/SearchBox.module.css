@@ -1,0 +1,11 @@
+.findCotact {
+  font-size: 20px;
+  margin: 20px 0 10px 0;
+}
+
+.inputCotact {
+  width: 350px;
+  padding: 7px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}

@@ -1,0 +1,49 @@
+.form {
+  background-color: rgba(227, 239, 182, 0.581);
+  border: 2px solid #676565;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: auto;
+  padding: 20px 10px;
+}
+
+.message {
+  color: rgb(221, 52, 52);
+  font-size: 14px;
+  font-style: italic;
+}
+
+.inputData {
+  width: 200px;
+  padding: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.addBtn {
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.64px;
+  color: #ffffff;
+  background: #417256d4;
+  cursor: pointer;
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: center;
+  min-width: 50px;
+  border-radius: 4px;
+  height: 30px;
+  border: none;
+  box-shadow: -5px 8px 8px -5px rgba(56, 25, 56, 0.68);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.addBtn:hover {
+  background: #6da987d4;
+}
