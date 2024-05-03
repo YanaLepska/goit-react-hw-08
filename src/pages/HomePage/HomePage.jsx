@@ -18,7 +18,7 @@ const HomePage = () => {
           important to stay in touch, because together we can overcome all
           obstacles and barriers.
         </p>
-        <img src="../../../public/img.png" alt="moon" />
+        <img src="../../assets/img.png" alt="moon" />
       </div>
     </>);
 };
