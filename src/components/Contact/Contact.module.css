@@ -4,12 +4,12 @@
 }
 
 .contactCard {
-  background-color: rgba(188, 172, 72, 0.433);
+  background: rgba(133, 133, 239, 0.262);
   border: 2px solid #676565;
   border-radius: 5px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 15px;
-  display: inline-flex;
+  margin: 15px auto 10px auto;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   width: 350px;
@@ -22,4 +22,13 @@
   cursor: pointer;
   display: inline-flex;
   border: none;
+}
+
+.contactBin {
+  fill: #da699c;
+}
+
+.contactSVG {
+  fill: #d3c7ed;
+  margin-right: 5px;
 }

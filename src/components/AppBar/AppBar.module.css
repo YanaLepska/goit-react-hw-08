@@ -1,0 +1,18 @@
+.header {
+  height: 48px;
+  background: linear-gradient(90deg, #3e1591 5%, #9a20b6 50%, #7614a3 100%);
+  color: rgba(2, 0, 36, 1);
+  border-radius: 4px;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}

@@ -1,0 +1,37 @@
+.welcome {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+
+.userName {
+  margin-left: 60px;
+  color: rgb(224, 229, 233);
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+  font-style: italic;
+}
+.logoutBtn {
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: #763af5;
+  padding: 12px 10px;
+  width: 100px;
+  height: 32px;
+  font-weight: 600;
+  font-size: 15px;
+  color: rgb(6, 2, 74);
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #7634d9 0%, #a46ed3 100%);
+  transition: background-color 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.logoutBtn:hover,
+.logoutBtn:focus {
+  background: linear-gradient(90deg, #9c79ea 0%, #c482e2 100%);
+}

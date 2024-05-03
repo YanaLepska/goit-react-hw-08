@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { INITIAL_STATE } from "./contactsSlice"; // Перемістіть імпорт після createSlice
+import { INITIAL_STATE } from "../contacts/slice"; 
 
 const filtersSlice = createSlice({
   name: "filters",
