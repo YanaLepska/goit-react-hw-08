@@ -1,4 +1,5 @@
 import css from "./HomePage.module.css";
+import image from "../../assets/img.png"
 
 const HomePage = () => {
   return (
@@ -18,7 +19,7 @@ const HomePage = () => {
           important to stay in touch, because together we can overcome all
           obstacles and barriers.
         </p>
-        <img src="../../../public/img.png" alt="moon" />
+        <img src={`${image}`} alt="moon" />
       </div>
     </>);
 };
