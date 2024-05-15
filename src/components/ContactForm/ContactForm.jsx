@@ -17,7 +17,11 @@ const contactSchema = Yup.object({
   number:Yup.string()
     .required("Required")
     .min(3, "Number is too Short!")
-    .max(50, "Number is too Long!"),
+    .max(50, "Number is too Long!")
+  .matches(
+        /^[0-9]{3}-[0-9]{2}-[0-9]{2}$/,
+        "Invalid phone number format (000-00-00)"
+      ),
 });
 
 const ContactForm = () => {

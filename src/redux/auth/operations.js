@@ -21,7 +21,11 @@ export const register = createAsyncThunk(
       setToken(response.data.token);
       return response.data;
     } catch (e) {
-      return thunkAPI.rejectWithValue(e.message);
+      let message = e.message;
+      if (e.response.status === 400) {
+        message = "Email or password is not valid";
+      }
+      return thunkAPI.rejectWithValue(message);
     }
   }
 );
@@ -34,7 +38,11 @@ export const login = createAsyncThunk(
       setToken(response.data.token);
       return response.data;
     } catch (e) {
-      return thunkAPI.rejectWithValue(e.message);
+      let message = e.message;
+      if (e.response.status === 400) {
+        message = "Email or password is not valid";
+      } 
+      return thunkAPI.rejectWithValue(message);
     }
   }
 );
@@ -42,28 +50,25 @@ export const login = createAsyncThunk(
 export const refreshUser = createAsyncThunk(
   "auth/refresh",
   async (_, thunkAPI) => {
-      try {
-          const state = thunkAPI.getState();
-          const token = state.auth.token;
-          setToken(token);
+    try {
+      const state = thunkAPI.getState();
+      const token = state.auth.token;
+      setToken(token);
       const response = await instance.get("/users/current");
-   
+
       return response.data;
     } catch (e) {
-      return thunkAPI.rejectWithValue(e.message);
+      return thunkAPI.rejectWithValue(null);
     }
   }
 );
 
-export const logout  = createAsyncThunk(
-  "auth/logout",
-  async (_, thunkAPI) => {
-    try {
-       await instance.post("/users/logout");
-        clearToken();
-      return;
-    } catch (e) {
-      return thunkAPI.rejectWithValue(e.message);
-    }
+export const logout = createAsyncThunk("auth/logout", async (_, thunkAPI) => {
+  try {
+    await instance.post("/users/logout");
+    clearToken();
+    return;
+  } catch (e) {
+    return thunkAPI.rejectWithValue(e.message);
   }
-);
+});

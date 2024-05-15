@@ -14,7 +14,7 @@
   align-items: center;
   width: 350px;
   height: auto;
-  padding: 20px 10px;
+  padding: 20px 15px;
 }
 
 .contactDelete {
@@ -24,11 +24,11 @@
   border: none;
 }
 
-.contactBin {
+/* .contactBin {
   fill: #da699c;
 }
 
 .contactSVG {
   fill: #d3c7ed;
   margin-right: 5px;
-}
+} */

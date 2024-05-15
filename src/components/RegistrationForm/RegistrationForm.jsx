@@ -3,7 +3,7 @@ import * as Yup from "yup";
 import { useDispatch } from "react-redux";
 import { register } from "../../redux/auth/operations";
 import css from "./RegistrationForm.module.css";
-import { Toaster } from "react-hot-toast";
+
 
 const initialState = {
   name: "",
