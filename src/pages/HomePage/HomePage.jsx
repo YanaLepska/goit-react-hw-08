@@ -21,8 +21,8 @@ const HomePage = () => {
           obstacles and barriers.
         </p>
         <img src={`${image}`} alt="moon" />
-        <p className={css.text}>© 2024 Yana Lepska GoIT </p>
-      </div>
+        
+      </div><p className={css.text}>© 2024 Yana Lepska GoIT </p>
     </>
   );
 };
