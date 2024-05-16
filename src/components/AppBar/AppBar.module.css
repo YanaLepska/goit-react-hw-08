@@ -1,18 +1,42 @@
 .header {
-  height: 48px;
+  height: auto;
   background: linear-gradient(90deg, #3e1591 5%, #9a20b6 50%, #7614a3 100%);
   color: rgba(2, 0, 36, 1);
   border-radius: 4px;
-  width: 80%;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 15px 0;
   margin: 0 auto;
 }
 
 .navLinks {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 10px;
+}
+
+@media screen and (min-width: 678px) {
+  .header {
+    max-height: 60px;
+    width: 90%;
+  }
+
+  .navLinks {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .navLinks {
+    gap: 80px;
+    flex-direction: row;
+  }
 }

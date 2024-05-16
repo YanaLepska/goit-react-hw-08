@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchContacts, addContact, deleteContact } from "./operations";
+import { fetchContacts, addContact, deleteContact, editContact } from "./operations";
 
 export const INITIAL_STATE = {
   contacts: {
@@ -27,6 +27,14 @@ const contactsSlice = createSlice({
         state.items = state.items.filter(
           (contact) => contact.id !== action.payload.id
         );
+      }).addCase(editContact.fulfilled, (state, action) => {
+        state.loading = false;
+        const updatedContactIndex = state.items.findIndex(
+          contact => contact.id === action.payload.id
+        );
+        if (updatedContactIndex !== -1) {
+          state.items[updatedContactIndex] = action.payload;
+        }
       });
   },
 });

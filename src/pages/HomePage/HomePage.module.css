@@ -1,16 +1,16 @@
 .container {
-  width: 650px;
+  min-width: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  margin: 40px auto;
+  margin: 20px auto;
 }
 
 .title {
   font-weight: 800;
-  font-size: 81px;
-  letter-spacing: -0.03em;
+  font-size: 48px;
+  letter-spacing: -0.02em;
   opacity: 0.9;
   background: linear-gradient(90deg, #fff 50%, #763af5 100%);
   -webkit-background-clip: text;
@@ -21,27 +21,110 @@
 
 .slogan {
   font-weight: 500;
-  font-size: 24px;
-  letter-spacing: -0.02em;
+  font-size: 18px;
+  letter-spacing: -0.01em;
   opacity: 0.7;
 }
 
 .description {
   display: flex;
-  max-width: 700px;
-  margin: 50px auto;
-  gap: 35px;
+  flex-direction: column;
+  min-width: 300px;
+  margin: 30px auto;
+  gap: 25px;
 }
 
 .descriptionText {
-  letter-spacing: 0.02em;
+  letter-spacing: 0.01em;
   opacity: 0.7;
-  font-size: 18px;
-  text-align: end;
+  font-size: 15px;
+  text-align: center;
 }
 
 img {
-  width: 416px;
-  height: 436px;
+  width: 316px;
+  height: 336px;
   border-radius: 5px;
+  margin: 0 auto;
+}
+
+.text {
+  margin: 0 auto;
+  padding-top: 20px;
+  font-size: 14px;
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 678px) {
+  .container {
+    min-width: 500px;
+    margin: 30px auto;
+  }
+
+  .title {
+    font-weight: 800;
+    font-size: 68px;
+    letter-spacing: -0.03em;
+  }
+
+  .slogan {
+    font-weight: 500;
+    font-size: 24px;
+    letter-spacing: -0.02em;
+  }
+
+  .description {
+    display: flex;
+    min-width: 600px;
+    flex-direction: row;
+    gap: 30px;
+  }
+
+  .descriptionText {
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    text-align: end;
+  }
+
+  img {
+    width: 416px;
+    height: 436px;
+    border-radius: 5px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .container {
+    width: 650px;
+    margin: 40px auto;
+  }
+
+  .title {
+    font-size: 81px;
+    letter-spacing: -0.03em;
+  }
+
+  .slogan {
+    font-size: 24px;
+    letter-spacing: -0.02em;
+  }
+
+  .description {
+    flex-direction: row;
+    max-width: 700px;
+    margin: 50px auto;
+    gap: 35px;
+  }
+
+  .descriptionText {
+    letter-spacing: 0.02em;
+    font-size: 18px;
+    text-align: end;
+  }
+
+  img {
+    width: 416px;
+    height: 436px;
+    border-radius: 5px;
+  }
 }

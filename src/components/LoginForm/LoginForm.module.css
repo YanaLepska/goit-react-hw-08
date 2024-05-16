@@ -1,8 +1,18 @@
+.message {
+  color: rgb(221, 52, 52);
+  font-size: 14px;
+  font-style: italic;
+}
+
 .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   border: 2px solid rgba(10, 13, 23, 0.05);
   border-radius: 20px;
-  padding: 40px;
-  width: 400px;
+  padding: 40px 20px;
+  max-width: 600px;
   height: auto;
   backdrop-filter: blur(380px);
   background: rgba(255, 255, 255, 0.07);
@@ -12,7 +22,7 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 5px;
   padding: 12px 14px;
-  width: 310px;
+  min-width: 280px;
   height: 42px;
   color: #ffffffde;
   background: rgba(255, 255, 255, 0.03);
@@ -20,11 +30,11 @@
 }
 
 .loginBtn {
-  margin-top: 16px;
+  margin: 16px auto;
   border-radius: 5px;
   border: #763af5;
   padding: 12px 10px;
-  width: 310px;
+  width: 280px;
   height: 42px;
   font-weight: 500;
   font-size: 15px;
@@ -44,8 +54,17 @@
   text-align: center;
   letter-spacing: -0.02em;
 }
-.message {
-  color: rgb(221, 52, 52);
-  font-size: 14px;
-  font-style: italic;
+
+@media screen and (min-width: 678px) {
+  .form {
+    width: 600px;
+  }
+
+  .inputData {
+    min-width: 380px;
+  }
+
+  .loginBtn {
+    width: 310px;
+  }
 }

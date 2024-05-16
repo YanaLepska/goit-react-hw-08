@@ -12,9 +12,22 @@
   text-transform: uppercase;
 }
 
-.navLinks {
+.links {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 60px;
+  gap: 30px;
+}
+
+@media screen and (min-width: 678px) {
+  .navLinks {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .navLinks {
+    gap: 80px;
+    margin-bottom: 0;
+  }
 }

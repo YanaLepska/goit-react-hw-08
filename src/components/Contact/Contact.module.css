@@ -2,6 +2,9 @@
   font-weight: 900;
   margin-bottom: 10px;
 }
+span {
+  margin-left: 8px;
+}
 
 .contactCard {
   background: rgba(133, 133, 239, 0.262);
@@ -12,16 +15,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 350px;
+  max-width: 380px;
   height: auto;
-  padding: 20px 15px;
+  padding: 20px;
 }
 
-.contactDelete {
+.contactBtn {
   background: inherit;
   cursor: pointer;
-  display: inline-flex;
   border: none;
+}
+.contactBtnConteiner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
 }
 
 /* .contactBin {
@@ -32,3 +41,8 @@
   fill: #d3c7ed;
   margin-right: 5px;
 } */
+@media screen and (min-width: 678px) {
+  .contactCard {
+    width: 400px;
+  }
+}
