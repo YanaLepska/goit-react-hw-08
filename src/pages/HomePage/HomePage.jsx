@@ -5,9 +5,9 @@ const HomePage = () => {
   return (
     <>
       <div className={css.container}>
-        <h1 className={css.title}>Get in touch</h1>
+        <h1 className={css.title}>Stay  in touch</h1>
         <p className={css.slogan}>
-          Reach out, and let&rsquo;s create a universe of possibilities
+          Let&rsquo;s create a universe of possibilities
           together!
         </p>
       </div>
